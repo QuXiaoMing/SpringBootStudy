@@ -25,6 +25,9 @@ public class UserEntity implements Serializable
     @Column(name = "t_address")
     private String address;
 
+    @Column(name = "t_pwd")
+    private String pwd;
+
     public Long getId() {
         return id;
     }
@@ -35,6 +38,14 @@ public class UserEntity implements Serializable
 
     public String getName() {
         return name;
+    }
+
+    public String getPwd() {
+        return pwd;
+    }
+
+    public void setPwd(String pwd) {
+        this.pwd = pwd;
     }
 
     public void setName(String name) {

@@ -10,8 +10,17 @@ public class IndexController {
      * 访问webapp/jsp/index.jsp文件
      * @return
      */
-    @RequestMapping(value = "/index",method = RequestMethod.GET)
+    @RequestMapping(value = "/login",method = RequestMethod.GET)
     public String index(){
+        return "login";
+    }
+
+    /**
+     * 访问webapp/jsp/index.jsp文件
+     * @return
+     */
+    @RequestMapping(value = "/",method = RequestMethod.GET)
+    public String test(){
         return "index";
     }
 }
